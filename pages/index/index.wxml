@@ -1,0 +1,34 @@
+<!-- //<text></text>相当于span行内元素 -->
+<!-- //<view></view>相当于div块元素 -->
+
+<view class = "container">
+  <!-- 轮播图 -->
+  <swiper class = "my-swipe" autoplay circular="true" indicator-dots="true" indicator-color="#999" indicator-active-color="whitesmoke" duration = "600" interval="5000">
+    <block wx:for = "{{ imgList }}" wx:key = "bid">
+      <swiper-item>
+        <image src="{{item.pic}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 分类导航 -->
+  <view class = "my-grid">
+    <mp-row>
+      <!-- 将整个屏幕宽度分为 24 单位 -->
+      <block  wx:for = "{{ cList }}" wx:key = "bid">
+        <navigator url = "/pages/goods/list/list?id={{item.bid}}">
+          <mp-col span="{{6}}">
+            <view>
+              <image src = "{{item.bimg}}" mode = "widthFix"></image>
+              <view>{{ item.bname }}</view>
+            </view>
+          </mp-col>
+        </navigator>
+      </block>
+    </mp-row>
+  </view>
+
+  <!-- 使用自定义商品列表组件 -->
+  <view class= "goods-box">
+    <goodsItem wx:for = "{{goodsList}}" wx:key = "index" pic = "{{item.pic}}" name = "{{item.name}}" info = "{{item.info}}" price = "{{item.price}}"></goodsItem>
+  </view>
+</view>  

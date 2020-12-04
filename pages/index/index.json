@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-col": "@miniprogram-component-plus/col",
+    "mp-row": "@miniprogram-component-plus/row",
+    "goodsItem":"/components/goodsItem/goodsItem"
+  },
+  "navigationBarTitleText": "首页"
+}

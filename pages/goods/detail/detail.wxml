@@ -1,0 +1,29 @@
+<!--pages/goods/detail/detail.wxml-->
+<swiper >
+  <swiper-item>
+    <image src = "{{goods.pic}}" mode = "aspectFit"></image>
+  </swiper-item>
+</swiper>
+
+<view class = "bar"></view>
+<view class = "info-box">
+  <view class = "name">samsung notebook9-flex</view>
+  <view class = "color">{{goods.color}}</view>
+  <view class = "time">{{goods.createtime}}</view>
+  <view class = "owner">{{goods.student.name}}：xxx 信誉等级：{{goods.student.level}}</view>
+  <view class = "info">{{goods.info}}</view>
+  <!-- 使用wxs模块，实现页面函数 -->
+  <wxs module = 'transform'>
+    var toFixed = function(num) {
+      return num.toFixed(2);
+    }
+    module.exports = {
+      toFixed:toFixed
+    };
+  </wxs>
+  <view class = "box">
+  <text class = "price">￥{{transform.toFixed(goods.price)}}</text>
+  <text class = "joinShopcar">加入购物车</text>
+  </view>
+</view>
+

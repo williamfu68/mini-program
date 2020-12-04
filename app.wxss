@@ -1,0 +1,7 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  /* rpx:相对像素 */
+  box-sizing: border-box;
+  padding:0rpx 20rpx 10rpx 20rpx;
+}

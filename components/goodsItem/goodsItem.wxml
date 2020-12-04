@@ -1,0 +1,7 @@
+<!--components/goodsItem/goodsItem.wxml-->
+<navigator class = "goods-box" url = "/pages/goods/detail/detail?id={{id}}">
+  <image src="{{pic}}" class = "goods-pic" mode = "widthFix"></image>
+  <view class = "goods-name">{{name}}</view>
+  <view class = "goods-info">{{info}}</view>
+  <view class = "goods-price">￥{{price}}</view>
+</navigator>

@@ -1,0 +1,63 @@
+/* pages/notice/notice.wxss */
+.notice-box{
+  display:flex;
+  width:100%;
+  height:70px;
+  align-items: center;
+  justify-content: space-between;
+  padding:15px;
+  box-sizing: border-box;
+  border-bottom:1px solid #ddd;
+}
+.notice-picbox{
+  width:50px;
+  height:50px;
+}
+.notice-pic{
+  width:100%;
+  height:100%;
+}
+.text-box{
+  /* width:80%; */
+  flex:1;
+  margin:0 0 5px 10px;
+}
+.text-title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font:bold 15px/30px 'Microsoft YaHei';
+  color:#333;
+}
+.text-info{
+  font-size: 11px;
+  color:#999;
+}
+
+movable-area{
+  /* 相对于父框的宽高 */
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  position:fixed;
+  top:0;
+  /* 设置鼠标能否穿透悬浮层 */
+  pointer-events: none;
+}
+movable-view{
+  /* border:1px solid #09f; */
+  position:fixed;
+  pointer-events: auto;
+}
+.toast{
+  text-align: center;
+  letter-spacing: 5rpx;
+  color:slategray;
+  background-color: #f0f0f0;
+  /* position:fixed;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%); */
+}

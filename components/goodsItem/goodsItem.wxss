@@ -1,0 +1,24 @@
+/* components/goodsItem/goodsItem.wxss */
+.goods-box{
+  width:100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  border:1px solid #ddd;
+  margin-top: 10rpx;
+}
+.goods-pic{
+  width:100%;
+}
+.goods-name{
+  font:bold 28rpx/40rpx 'Microsoft YaHei';
+  /* 规定字体尺寸和行高 */
+  color:#666;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+}
+.goods-info{
+  font-size: 20rpx;
+  color:#aaa;
+}
+.goods-price{
+  color:red;
+  font:30rpx/50rpx 'Microsoft YaHei';
+}

@@ -1,0 +1,10 @@
+<!--pages/notice/noticeInfo/noticeInfo.wxml-->
+<view class = "noticeInfo">
+  <view  class = "title">{{noticeInfoList.title}}</view>
+  <view  class = "info">发表时间：{{noticeInfoList.createtime}}阅读量:{{noticeInfoList.hits}}</view>
+  <image src = "{{noticeInfoList.pic}}"  class = "pic" mode = "widthFix"></image>
+  <view  class = "content">
+      {{noticeInfoList.content}}
+   </view>
+  </view>
+  

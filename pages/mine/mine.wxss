@@ -1,0 +1,46 @@
+/* pages/mine/mine.wxss */
+.face-box{
+  height:200rpx;
+  width:100%;
+  background-color: #e54847;
+  display:flex;
+  align-items: center;
+  position: fixed;
+  top:0;
+  z-index: 99;
+}
+.face{
+  width:130rpx;
+  height:130rpx;
+  margin:0 40rpx;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+}
+.nickname{
+  color:#f0f0f0;
+  font-size: 40rpx;
+  text-shadow:3px 3px 5px rgba(0,0,0,.3);
+}
+
+.list-box{
+  padding:210rpx 0 0;
+  box-sizing: border-box;
+}
+
+.weui-cell__icon{
+  margin-right:16px;
+  vertical-align: middle;
+  width:20px;
+  height:20px;
+  position: relative;
+}
+
+.btn{
+  position:absolute;
+  top:0; 
+  left:0;
+  width:100% !important;
+  height:100%;
+  background-color:transparent;
+  line-height: 37px;
+}

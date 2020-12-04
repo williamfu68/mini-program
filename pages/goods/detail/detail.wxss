@@ -1,0 +1,54 @@
+/* pages/goods/detail/detail.wxss */
+swiper{
+  width:100%;
+  height:300rpx;
+}
+swiper image{
+  width:100%;
+  height:100%;
+}
+.info-box{
+  padding:30rpx;
+  box-sizing: border-box;
+  font:30rpx/45rpx 'Microsoft YaHei';
+  color:#333;
+}
+.name{
+  font-weight:700;
+}
+.color{
+  font:25rpx/40rpx 'Microsoft YaHei';
+  color:#f00;
+}
+.time{
+  font:20rpx/40rpx 'Microsoft YaHei';
+  color:#aaa;
+}
+
+.info{
+  margin-top:50rpx;
+  min-height: 400rpx;
+}
+.box{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top:1px solid #aaa;
+  padding:10rpx 0 0 0 ;
+}
+.price{
+  font:30rpx/50rpx 'Microsoft YaHei';
+  color:#f00;
+}
+.joinShopcar{
+  background-color: #f00;
+  color:#fff;
+  border-radius: 50px;
+  text-align: center;
+  height:60rpx;
+  line-height: 58rpx;
+  padding:0 40rpx;
+  box-sizing: border-box;
+  
+
+}

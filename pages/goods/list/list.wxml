@@ -1,0 +1,14 @@
+<!--pages/goods/list/list.wxml-->
+<view class = "list-box">
+  <scroll-view class = "left-class" scroll-y = "true">
+    <view class = "small-class {{index == currentIndex ? 'active' : ''}}" wx:for = "{{smallList}}" wx:key = "id" catchtap="setCurrentIndex" id = "{{index}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+  <scroll-view class = "right-class">
+    <view  style = "width:100%;display:flex;flex-wrap:nowrap;justify-content:space-between">
+      <goodsItem wx:for = "{{goodsList}}" wx:key ="id" id = "{{item.id}}" pic = "{{item.pic}}" name = "{{item.name}}" info = "{{item.info}}" price = "{{item.price}}" style = "width:49%"></goodsItem>
+    </view>
+    
+  </scroll-view>
+</view>

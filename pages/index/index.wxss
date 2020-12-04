@@ -1,0 +1,35 @@
+/**index.wxss**/
+.my-swipe{
+  border:1px solid transparent;
+  width:100%;
+  /* 换算公式:
+  框高：框宽 * 图像原始高度 / 图像原始高度
+  */
+  height:calc(100vw * 350 / 1000);
+  /* height:35vw; */
+  background-color: #eee;
+}
+.my-swipe image{
+  width:100%;
+  height:100%;
+}
+.my-grid{
+  width:100%;
+  text-align: center;
+  margin:20rpx 0;
+  font-size: 25rpx;
+}
+.my-grid image{
+  width:30%;
+  height:auto;
+  margin:40rpx auto;
+}
+.goods-box{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.goods-box goodsItem{
+  width:49%;
+}

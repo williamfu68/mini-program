@@ -1,0 +1,25 @@
+<!--pages/mine/mine.wxml-->
+<view class = "face-box">
+
+  <block wx:if = "{{!authorize && canIUse}}">
+      <button type = "primary" open-type="getUserInfo" size = "mini" bindgetuserinfo="getUserInfo">微信授权</button>
+  </block>
+  <block wx:else>
+    <image class = "face" src = "{{currentUserInfo.avatarUrl}}"></image>
+    <text class = "nickname">{{currentUserInfo.nickName}}</text>
+  </block> 
+  
+</view>
+<!-- 列表组 -->
+<view class = "list-box">
+  <mp-cells>
+    <mp-cell icon = "/img/my-gm.svg" link hover>已购</mp-cell>
+    <mp-cell icon = "/img/my-sm.svg" link hover>已售</mp-cell>
+    <mp-cell icon = "/img/my-fb.svg" link hover>已发布</mp-cell>
+    <mp-cell icon = "/img/my-kf.svg" link hover catchtap = "callPhone">客服热线</mp-cell>
+    <mp-cell icon = "/img/my-kf2.svg" link hover>
+      <text>在线客服</text>
+      <button open-type="contact" class = "btn"></button>
+    </mp-cell>
+  </mp-cells>
+</view>

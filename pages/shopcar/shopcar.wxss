@@ -1,0 +1,67 @@
+/* pages/shopcar/shopcar.wxss */
+.shopcar-item{
+  height:120px;
+  display:flex;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border:1px solid rgb(0,0,0,.1);
+}
+.check-box{
+  width:50px;
+}
+.pic-box{
+  width:90px;
+}
+.pic{
+  width:100%;
+}
+.info-box{
+  flex:1;
+  margin-left:10px;
+}
+.name{
+  font:16px/20px 'Microsoft YaHei' ;
+  color:#333;
+}
+.info{
+  font:12px 'Microsoft YaHei' ;
+  color:#999;
+}
+.price-number{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price{
+  font:16px/20px 'Microsoft YaHei';
+  color:#f00;
+  margin-right:10px;
+}
+.number-box{
+  display:flex;
+  align-items: center;
+}
+.number{
+  width: 30px;
+  text-align: center ;
+}
+
+/* 总计模块 */
+.total-box{
+  display:flex;
+  align-items: center;
+  position: fixed;
+  bottom:0;
+  width:100%;
+  line-height: 40px;
+  justify-content: space-between;
+  border-top:1px solid rgba(0,0,0,.1);
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+}
+.submit{
+  background-color: #f00;
+  text-align: center;
+  padding:0 10px;
+}

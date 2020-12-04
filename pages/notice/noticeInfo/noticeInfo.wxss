@@ -1,0 +1,21 @@
+/* pages/notice/noticeInfo/noticeInfo.wxss */
+.noticeInfo{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.title{
+  font:20px/30px 'Microsoft Yahei';
+  color:#333;
+}
+.info{
+  font:14px/30px 'Microsoft YaHei';
+  color:#999;
+}
+.pic{
+  width:100%;
+}
+.content{
+  font:16px/40px 'Microsoft YaHei';
+  color:#555;
+  text-indent: 2rem;
+}

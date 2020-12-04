@@ -1,0 +1,22 @@
+<!--pages/notice/notice.wxml-->
+<navigator url = "/pages/notice/noticeInfo/noticeInfo?id={{item.nid}}" wx:for = "{{ noticeList }}" wx:key = "id" >
+  <view class = "notice-box" >
+  <view class = "notice-picbox">
+    <image class = "notice-pic" src = "{{ item.pic }}"></image>
+  </view>
+  <view class = "text-box">
+    <view class = "text-title">{{ item.title }}</view>
+    <view class = "text-info">发表时间：{{ item.createtime }} 阅读量：{{ item.hits }}</view>
+  </view>
+</view>
+</navigator>
+
+<!-- 实现可拖动的加号 -->
+<movable-area>
+  <movable-view x = "{{x}}" y = "{{y}}"  direction = "all" id = "movable-view" animation = "{{false}}">
+    <image src = "/img/add.png" style = "width:45px" mode = "widthFix"></image>
+  </movable-view>
+</movable-area>
+<!-- 数据全部加载完成提示信息 -->
+<view class = "toast" wx:if = "{{isOK}}">--- 我是有底线的 ---</view>
+

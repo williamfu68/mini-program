@@ -1,0 +1,32 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class = "shopcar-box">
+  <view class = "shopcar-item" wx:for = "{{ shopcarList }}" wx:key = "id">
+    <view class = "check-box">
+      <radio checked = "{{item.checked}}" bindtap="editChecked" id = "{{index}}"></radio>
+    </view>
+    <view class = "pic-box">
+      <image mode = "aspectFit" src = "{{item.pic}}" class = "pic"></image>
+    </view>
+    <view class = "info-box">
+    <!-- 展示商品名称 价格 简介 数量控制 -->
+      <view class = "name">{{item.name}}</view>
+      <view class = "info">{{item.info}}</view>
+      <view class = "price-number">
+        <text class = "price">{{item.price}}</text>
+        <view class = "number-box">
+        <!-- 给按钮绑定事件以及携带数据 -->
+          <button size = "mini" bindtap = "editNum" id = "{{index}}" data-flag = "-">-</button>
+          <text class = "number">{{item.number}}</text>
+          <button size = "mini" bindtap = "editNum" id = "{{index}}" data-flag = "+">+</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 总计 -->
+<view class = "total-box">
+  <radio catchtap="editCheckedAll" checked="{{ checkedAll }}">全选</radio>
+  <text class = "text">总计：{{count}}件商品</text>
+  <text class = "total-price">￥{{price}}</text>
+  <view class = "submit">去结算</view>
+</view>
